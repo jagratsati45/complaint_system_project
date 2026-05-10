@@ -1,5 +1,5 @@
 <?php
-function departments_has_user_id($conn)
+function departments_has_user_id(mysqli $conn): bool
 {
     static $has_user_id = null;
 
@@ -13,7 +13,7 @@ function departments_has_user_id($conn)
     return $has_user_id;
 }
 
-function get_department_id_for_user($conn, $user_id, $user_name)
+function get_department_id_for_user(mysqli $conn, int $user_id, string $user_name): int
 {
     if (departments_has_user_id($conn)) {
         $stmt = $conn->prepare("SELECT id FROM departments WHERE user_id=? LIMIT 1");
