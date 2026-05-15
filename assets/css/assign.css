@@ -1,116 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
-    margin: 0;
     min-height: 100vh;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #2f80ed 0%, #56ccf2 100%);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(-45deg, #e8eaf6, #e3f2fd, #ede7f6, #e0f2f1);
+    background-size: 300% 300%;
+    animation: bgShift 18s ease infinite;
+    color: #1e293b;
+    -webkit-font-smoothing: antialiased;
+}
+
+@keyframes bgShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .container {
-    width: min(650px, 92%);
-    margin: 72px auto;
-    background: rgba(255, 255, 255, 0.96);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 12px 28px rgba(0, 39, 105, 0.18);
+    width: min(600px, 92%);
+    margin: 80px auto;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
 }
 
 h2 {
-    margin: 0 0 22px 0;
-    color: #15325b;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 24px 0;
+    letter-spacing: -0.02em;
 }
 
-.form-box {
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-}
+.form-box { display: flex; flex-direction: column; gap: 16px; }
 
 label {
-    font-size: 16px;
+    font-size: 0.82rem;
     font-weight: 600;
-    color: #23436f;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
 }
 
-.form-row {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
+.form-row { display: flex; gap: 10px; flex-wrap: wrap; }
 
 select {
     flex: 1;
     min-width: 220px;
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #bfcde4;
+    padding: 11px 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #1e293b;
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+    background: #ffffff;
 }
 
 button {
-    padding: 10px 16px;
-    border: none;
-    border-radius: 6px;
-    background: #3f65d6;
-    color: white;
-    cursor: pointer;
+    padding: 11px 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
     font-weight: 600;
+    color: #ffffff;
+    background: #3b82f6;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
 }
 
-button:hover {
-    background: #2f55c5;
-}
+button:hover { background: #2563eb; }
+button:active { transform: scale(0.97); }
 
-.back-btn {
-    background: #6c7a92;
-    width: fit-content;
-}
-
-.back-btn:hover {
-    background: #5b677c;
-}
+.back-btn { background: #64748b; width: fit-content; }
+.back-btn:hover { background: #475569; }
 
 @media (max-width: 768px) {
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container {
-        margin: 20px auto;
-        padding: 20px;
-        width: min(650px, 90%);
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    .form-row {
-        flex-direction: column;
-    }
-
-    select {
-        min-width: 0;
-        width: 100%;
-    }
-
-    button {
-        width: 100%;
-    }
+    body { display: flex; justify-content: center; align-items: center; }
+    .container { margin: 24px auto; padding: 24px; width: min(600px, 92%); }
+    h2 { font-size: 1.2rem; }
+    .form-row { flex-direction: column; }
+    select { min-width: 0; width: 100%; }
+    button { width: 100%; }
 }
 
 @media (max-width: 480px) {
-    .container {
-        margin: 16px auto;
-        padding: 16px;
-    }
-
-    h2 {
-        font-size: 17px;
-        margin-bottom: 16px;
-    }
-
-    label {
-        font-size: 14px;
-    }
+    .container { margin: 16px auto; padding: 18px; border-radius: 14px; }
+    h2 { font-size: 1.1rem; margin-bottom: 18px; }
+    label { font-size: 0.78rem; }
 }

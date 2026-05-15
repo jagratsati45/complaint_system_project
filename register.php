@@ -8,23 +8,25 @@
     <style>
         .right-side-pop {
             position: fixed;
-            top: 20px;
-            right: 20px;
-            background-color: #333;
-            color: white;
-            padding: 15px 25px;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            top: 24px;
+            right: 24px;
+            background: #0f172a;
+            color: #ffffff;
+            padding: 14px 22px;
+            border-radius: 12px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
             z-index: 10000;
             opacity: 0;
-            transform: translateX(100px);
-            transition: all 0.5s ease-in-out;
+            transform: translateY(-12px);
+            transition: opacity 0.35s ease, transform 0.35s ease;
             visibility: hidden;
         }
 
         .right-side-pop.show {
             opacity: 1;
-            transform: translateX(0);
+            transform: translateY(0);
             visibility: visible;
         }
     </style>
