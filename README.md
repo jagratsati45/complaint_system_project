@@ -1,12 +1,15 @@
 <!-- ============== HERO BANNER ============== -->
 <a href="#">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,50:D946EF,100:F59E0B&height=220&section=header&text=Complaint%20Management%20System&fontColor=ffffff&fontSize=42&fontAlignY=38&desc=Role-based%20•%20PHP%20%2B%20MySQL%20•%20Built%20for%20clarity&descAlignY=60&descSize=16&animation=twinkling" alt="banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,50:D946EF,100:F59E0B&height=200&section=header&text=Complaint%20Management%20System&fontColor=ffffff&fontSize=36&fontAlignY=38&desc=Role-based%20%E2%80%A2%20PHP%20%2B%20MySQL&descAlignY=62&descSize=14&animation=twinkling" alt="banner" width="100%" />
 </a>
 
 <div align="center">
 
 <a href="#">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2800&pause=600&color=6366F1&center=true&vCenter=true&width=720&lines=Submit+complaints+in+seconds.;Route+them+to+the+right+department.;Resolve+faster%2C+together.;Admin+%E2%80%A2+User+%E2%80%A2+Department+dashboards." alt="Typing SVG" />
+  <picture>
+    <source media="(max-width: 600px)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=16&duration=2800&pause=600&color=6366F1&center=true&vCenter=true&width=320&lines=Submit+complaints.;Route+to+departments.;Resolve+faster." />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2800&pause=600&color=6366F1&center=true&vCenter=true&width=720&lines=Submit+complaints+in+seconds.;Route+them+to+the+right+department.;Resolve+faster%2C+together.;Admin+%E2%80%A2+User+%E2%80%A2+Department+dashboards." alt="Typing SVG" />
+  </picture>
 </a>
 
 <br/>
@@ -42,22 +45,22 @@
 
 ## Table of Contents
 
-- [About](#-about)
-- [Highlights](#-highlights)
-- [Tech Stack](#%EF%B8%8F-tech-stack)
-- [Feature Set](#-feature-set)
-- [Roles & Capabilities](#-roles--capabilities)
-- [System Architecture](#-system-architecture)
-- [Complaint Lifecycle](#-complaint-lifecycle)
-- [Pages and Routes](#-pages-and-routes)
-- [Quick Start (XAMPP)](#-quick-start-xampp)
-- [Database Setup](#-database-setup)
-- [Project Structure](#-project-structure)
-- [Security Notes](#-security-notes)
-- [Screenshots](#-screenshots)
-- [Troubleshooting](#-troubleshooting)
-- [Roadmap](#%EF%B8%8F-roadmap)
-- [Contributing](#-contributing)
+- [About](#about)
+- [Highlights](#highlights)
+- [Tech Stack](#tech-stack)
+- [Feature Set](#feature-set)
+- [Roles & Capabilities](#roles--capabilities)
+- [System Architecture](#system-architecture)
+- [Complaint Lifecycle](#complaint-lifecycle)
+- [Pages and Routes](#pages-and-routes)
+- [Quick Start (XAMPP)](#quick-start-xampp)
+- [Database Setup](#database-setup)
+- [Project Structure](#project-structure)
+- [Security Notes](#security-notes)
+- [Screenshots](#screenshots)
+- [Troubleshooting](#troubleshooting)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 
@@ -79,48 +82,17 @@
 
 ## Highlights
 
-<table>
-<tr>
-<td width="50%" valign="top">
+> ### Designed for clarity
+> Three role-scoped dashboards • Color-coded status badges • Mobile-friendly stacked tables • Toast feedback on auth flows
 
-### Designed for clarity
-- Three role-scoped dashboards
-- Color-coded status badges
-- Mobile-friendly stacked tables
-- Toast feedback on auth flows
+> ### Built with care
+> Prepared statements end-to-end • `password_hash()` + `password_verify()` • `session_regenerate_id()` after login • Allow-listed status transitions
 
-</td>
-<td width="50%" valign="top">
+> ### Drop-in friendly
+> Single `config/db.php` to edit • First user auto-becomes Admin • Schema auto-detection for legacy DBs • Works on any LAMP/XAMPP/WAMP stack
 
-### Built with care
-- Prepared statements end-to-end
-- `password_hash()` + `password_verify()`
-- `session_regenerate_id()` after login
-- Allow-listed status transitions
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### Drop-in friendly
-- Single `config/db.php` to edit
-- First user auto-becomes Admin
-- Schema auto-detection for legacy DBs
-- Works on any LAMP/XAMPP/WAMP stack
-
-</td>
-<td width="50%" valign="top">
-
-### Easy to extend
-- Clear folder-per-role layout
-- Tiny, dependency-free codebase
-- Helper module for department linking
-- Roadmap for CSRF, pagination, email
-
-</td>
-</tr>
-</table>
+> ### Easy to extend
+> Clear folder-per-role layout • Tiny, dependency-free codebase • Helper module for department linking • Roadmap for CSRF, pagination, email
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 
@@ -130,34 +102,41 @@
 
 <table>
   <tr>
-    <td align="center" width="110">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="46" /><br />
+    <td align="center" width="33%">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" /><br />
       <sub><b>PHP 8.x</b></sub>
     </td>
-    <td align="center" width="110">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="46" /><br />
+    <td align="center" width="33%">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" /><br />
       <sub><b>MySQL 8.x</b></sub>
     </td>
-    <td align="center" width="110">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="46" /><br />
+    <td align="center" width="33%">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" width="40" /><br />
+      <sub><b>Apache</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" /><br />
       <sub><b>HTML5</b></sub>
     </td>
-    <td align="center" width="110">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="46" /><br />
+    <td align="center" width="33%">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" /><br />
       <sub><b>CSS3</b></sub>
     </td>
-    <td align="center" width="110">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="46" /><br />
+    <td align="center" width="33%">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" /><br />
       <sub><b>JavaScript</b></sub>
-    </td>
-    <td align="center" width="110">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" width="46" /><br />
-      <sub><b>Apache</b></sub>
     </td>
   </tr>
 </table>
 
 </div>
+
+- **Server-side:** PHP with `mysqli` and prepared statements
+- **Database:** MySQL — three core tables (`users`, `departments`, `complaints`)
+- **Frontend:** Vanilla HTML, CSS, JavaScript with `fetch()` for async auth
+- **Local stack:** XAMPP (Apache + MySQL) recommended
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 
@@ -231,7 +210,7 @@
 
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#6366F1','primaryTextColor':'#fff','primaryBorderColor':'#4338CA','lineColor':'#D946EF','secondaryColor':'#F59E0B','tertiaryColor':'#1E1B4B'}}}%%
-flowchart LR
+flowchart TB
   subgraph User
     U1[Register / Login]
     U2[Submit Complaint]
@@ -270,11 +249,11 @@ flowchart TB
   Apache --> UserMod[user/*]
   Apache --> AdminMod[admin/*]
   Apache --> DeptMod[department/*]
-  Auth --> DB[(🗄️ MySQL: complaint_system)]
+  Auth --> DB[(🗄️ MySQL)]
   UserMod --> DB
   AdminMod --> DB
   DeptMod --> DB
-  Apache -. shared .- Config[config/db.php<br/>config/department_helper.php]
+  Apache -. shared .- Config[config/*]
   Config --> DB
 ```
 
@@ -295,43 +274,43 @@ flowchart TB
 stateDiagram-v2
   [*] --> Pending: User submits
   Pending --> Assigned: Admin assigns department
-  Assigned --> InProgress: Department starts work
-  Assigned --> Resolved: Department resolves directly
+  Assigned --> InProgress: Department starts
+  Assigned --> Resolved: Resolved directly
   InProgress --> Resolved: Department resolves
   Resolved --> [*]
 ```
 
-| Status | Color | Set By | Where |
-|---|---|---|---|
-| 🟠 **Pending** | Amber | System (default) | `user/add_complaint_process.php` |
-| 🟣 **Assigned** | Magenta | Admin | `admin/assign_department.php` |
-| ◦ **In Progress** | Indigo | Department | `department/update_status_process.php` |
-| ○ **Resolved** | Emerald | Department | `department/update_status_process.php` |
+| Status | Set By | Where |
+|---|---|---|
+| 🟠 **Pending** | System (default) | `user/add_complaint_process.php` |
+| 🟣 **Assigned** | Admin | `admin/assign_department.php` |
+| ◦ **In Progress** | Department | `department/update_status_process.php` |
+| ○ **Resolved** | Department | `department/update_status_process.php` |
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 
 ## Pages and Routes
 
-| Purpose | Method | Path |
-|---|---|---|
-| Login (Admin / User) | `GET` | `login.php` |
-| Register | `GET` | `register.php` |
-| Login processor | `POST` | `auth/login_process.php` |
-| Register processor | `POST` | `auth/register_process.php` |
-| Logout | `GET` | `auth/logout.php` |
-| User dashboard | `GET` | `user/dashboard.php` |
-| Add complaint | `GET` | `user/add_complaint.php` |
-| Add complaint processor | `POST` | `user/add_complaint_process.php` |
-| View complaint | `GET` | `user/view_complaint.php?id={id}` |
-| Admin dashboard | `GET` | `admin/dashboard.php` |
-| Create department | `GET` | `admin/create_department.php` |
-| Create department processor | `POST` | `admin/create_department_process.php` |
-| Assign complaint | `GET` | `admin/assign.php?id={id}` |
-| Assign processor | `POST` | `admin/assign_department.php` |
-| Department login | `GET` | `department/login.php` |
-| Department dashboard | `GET` | `department/dashboard.php` |
-| Update status | `GET` | `department/update_status.php?id={id}` |
-| Update status processor | `POST` | `department/update_status_process.php` |
+| Method | Path |
+|---|---|
+| `GET` | `login.php` — Login (Admin / User) |
+| `GET` | `register.php` — Register |
+| `POST` | `auth/login_process.php` |
+| `POST` | `auth/register_process.php` |
+| `GET` | `auth/logout.php` |
+| `GET` | `user/dashboard.php` |
+| `GET` | `user/add_complaint.php` |
+| `POST` | `user/add_complaint_process.php` |
+| `GET` | `user/view_complaint.php?id={id}` |
+| `GET` | `admin/dashboard.php` |
+| `GET` | `admin/create_department.php` |
+| `POST` | `admin/create_department_process.php` |
+| `GET` | `admin/assign.php?id={id}` |
+| `POST` | `admin/assign_department.php` |
+| `GET` | `department/login.php` |
+| `GET` | `department/dashboard.php` |
+| `GET` | `department/update_status.php?id={id}` |
+| `POST` | `department/update_status_process.php` |
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
 
@@ -342,7 +321,7 @@ stateDiagram-v2
 
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#6366F1','primaryTextColor':'#fff','primaryBorderColor':'#4338CA','lineColor':'#D946EF'}}}%%
-flowchart LR
+flowchart TB
   A[1. Install XAMPP] --> B[2. Start Apache + MySQL]
   B --> C[3. Clone into htdocs]
   C --> D[4. Create complaint_system DB]
@@ -410,10 +389,10 @@ CREATE TABLE IF NOT EXISTS complaints (
 
 ### Department linking modes
 
-| Mode | Trigger | Resolved By |
-|---|---|---|
-| **By `user_id`** | If `departments.user_id` exists | `WHERE departments.user_id = ?` |
-| **By `name`** *(legacy)* | If the column is missing | `WHERE departments.name = users.name` |
+| Mode | Trigger |
+|---|---|
+| **By `user_id`** | If `departments.user_id` exists |
+| **By `name`** *(legacy)* | If the column is missing |
 
 Handled inside `config/department_helper.php` — existing installs keep working without migration.
 
@@ -424,35 +403,35 @@ Handled inside `config/department_helper.php` — existing installs keep working
 ```text
 complaint_system_project/
 ├─ admin/
-│  ├─ assign.php                      # Pick a department for a complaint
-│  ├─ assign_department.php           # POST handler that assigns + flips status
-│  ├─ create_department.php           # Form to create a department account
-│  ├─ create_department_process.php   # Transactional user + department insert
-│  └─ dashboard.php                   # Admin overview of complaints + departments
+│  ├─ assign.php
+│  ├─ assign_department.php
+│  ├─ create_department.php
+│  ├─ create_department_process.php
+│  └─ dashboard.php
 ├─ assets/css/
 │  ├─ admin.css
 │  ├─ assign.css
 │  └─ view.css
 ├─ auth/
-│  ├─ login_process.php               # Validates creds, sets session, branches by role
-│  ├─ logout.php                      # Destroys session
-│  └─ register_process.php            # Creates user; first user becomes admin
+│  ├─ login_process.php
+│  ├─ logout.php
+│  └─ register_process.php
 ├─ config/
-│  ├─ db.php                          # mysqli connection
-│  └─ department_helper.php           # Department <-> user linking helpers
+│  ├─ db.php
+│  └─ department_helper.php
 ├─ department/
-│  ├─ dashboard.php                   # Lists complaints for the department
-│  ├─ login.php                       # Department-only login page
-│  ├─ update_status.php               # Status update form
-│  └─ update_status_process.php       # POST handler with allow-listed statuses
+│  ├─ dashboard.php
+│  ├─ login.php
+│  ├─ update_status.php
+│  └─ update_status_process.php
 ├─ user/
-│  ├─ add_complaint.php               # Form to submit a complaint
-│  ├─ add_complaint_process.php       # POST handler
-│  ├─ dashboard.php                   # User's own complaint list
-│  ├─ get_user_complaints.php         # Helper query
-│  └─ view_complaint.php              # Complaint detail view
-├─ login.php                          # Main login page
-├─ register.php                       # Registration page
+│  ├─ add_complaint.php
+│  ├─ add_complaint_process.php
+│  ├─ dashboard.php
+│  ├─ get_user_complaints.php
+│  └─ view_complaint.php
+├─ login.php
+├─ register.php
 └─ README.md
 ```
 
@@ -464,12 +443,12 @@ complaint_system_project/
 |---|---|
 | **SQL Injection** | Prepared statements + `bind_param` everywhere |
 | **XSS** | Output via `htmlspecialchars()` in every PHP view |
-| **Password storage** | `password_hash()` (`PASSWORD_DEFAULT`) + `password_verify()` |
+| **Password storage** | `password_hash()` + `password_verify()` |
 | **Session fixation** | `session_regenerate_id(true)` on login |
-| **Method confusion** | Every processor checks `$_SERVER['REQUEST_METHOD']` |
-| **Privilege escalation** | Each page checks `$_SESSION['role']` and redirects on mismatch |
-| **Status tampering** | Status updates restricted to an allow-listed array |
-| **Cross-account access** | Department updates require both `complaint_id` *and* matching `department_id` |
+| **Method confusion** | Every processor checks `REQUEST_METHOD` |
+| **Privilege escalation** | Each page checks `$_SESSION['role']` |
+| **Status tampering** | Updates restricted to allow-listed values |
+| **Cross-account access** | Department updates verify `department_id` |
 
 > [!WARNING]
 > Built for **learning + local development**. Add HTTPS, CSRF tokens, rate limiting, and stronger validation before deploying publicly.
@@ -568,7 +547,7 @@ The email is already in `users`. Use a different email or remove the conflicting
 
 For larger changes, open an issue first to discuss the direction.
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F59E0B,50:D946EF,100:6366F1&height=140&section=footer&text=Thanks%20for%20visiting!&fontColor=ffffff&fontSize=22&fontAlignY=70&animation=twinkling" alt="footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F59E0B,50:D946EF,100:6366F1&height=140&section=footer&text=Thanks%20for%20visiting!&fontColor=ffffff&fontSize=22&fontAlignY=70&animation=twinkling" alt="footer" width="100%" />
 
 <div align="center">
 <sub>Crafted with PHP, MySQL, and a lot of <code>console.log()</code>.<br/>If this helped you, drop a · on the repo.</sub>
